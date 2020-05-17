@@ -1,0 +1,23 @@
+{
+    "name": "react-parcel",
+    "version": "1.0.0",
+    "description": "react-parcel",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "author": "Filip Talaga",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-clean-dist": "0.0.6"
+    }
+}
