@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel index.html --open --port 4000",
-        "build": "tsc && parcel build index.html --no-source-maps",
+        "tsc": "tsc",
+        "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose",
+        "build": "npm run tsc && npm run lint && parcel build index.html --no-source-maps",
         "deploy": "npm run build && firebase deploy"
     },
     "author": "Filip Talaga",
@@ -30,6 +32,12 @@
         "parcel-bundler": "^1.12.4",
         "parcel-plugin-babel-typescript": "^1.0.1",
         "parcel-plugin-clean-dist": "0.0.6",
+        "prettier": "^2.0.5",
+        "tslint": "^6.1.2",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-config-standard": "^9.0.0",
+        "tslint-plugin-prettier": "^2.3.0",
+        "tslint-react": "^5.0.0",
         "typescript": "^3.9.2"
     }
 }

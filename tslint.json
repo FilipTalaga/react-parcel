@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-standard",
+        "tslint-react",
+        "tslint-config-prettier"
+    ],
+    "rulesDirectory": ["tslint-plugin-prettier"],
+    "rules": {
+        "prettier": true,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "member-ordering": false,
+        "no-empty-interface": false,
+        "interface-name": false,
+        "semicolon": [true, "always"],
+        "ter-indent": [
+            true,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "space-before-function-paren": false,
+        "member-access": false,
+        "jsx-no-multiline-js": false,
+        "jsx-no-lambda": false,
+        "arrow-parens": false,
+        "no-floating-promises": false,
+        "no-empty": false,
+        "quotemark": [true, "single"],
+        "no-console": false,
+        "jsx-boolean-value": false,
+        "strict-type-predicates": false,
+        "no-bitwise": false,
+        "only-arrow-functions": false
+    }
+}
