@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel index.html --open --port 4000",
-        "build": "parcel build index.html",
+        "build": "parcel build index.html --no-source-maps",
         "deploy": "npm run build && firebase deploy"
     },
     "author": "Filip Talaga",
