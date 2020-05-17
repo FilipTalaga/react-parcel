@@ -4,7 +4,7 @@
     "description": "react-parcel",
     "main": "index.js",
     "scripts": {
-        "start": "parcel index.html",
+        "start": "parcel index.html --open --port 4000",
         "build": "parcel build index.html"
     },
     "author": "Filip Talaga",
